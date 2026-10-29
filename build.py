@@ -126,6 +126,14 @@ def main():
 {listing}"""
     with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as fh:
         fh.write(page(site["title"], body, site.get("subtitle", "")))
+    # Τοπική λίστα links για το ΓΕΜΗ (στο .gitignore, δεν δημοσιεύεται)
+    rows = sorted(clients, key=lambda c: c[1]["name"])
+    with open(os.path.join(ROOT, "LINKS-GEMH.txt"), "w", encoding="utf-8-sig", newline="\r\n") as fh:
+        fh.write("LINKS ΔΗΜΟΣΙΕΥΣΗΣ ΟΙΚΟΝΟΜΙΚΩΝ ΚΑΤΑΣΤΑΣΕΩΝ (για δήλωση στο ΓΕΜΗ)\n")
+        fh.write(f"Ενημέρωση: {date.today().strftime('%d/%m/%Y')} – {len(rows)} εταιρείες\n\n")
+        for n, (slug, info) in enumerate(rows, 1):
+            fh.write(f"{n:2}. {info['name']}\n    ΓΕΜΗ: {info.get('gemi', '')}   ΑΦΜ: {info.get('afm', '')}\n"
+                     f"    {site['base_url']}/{slug}/\n\n")
     print(f"OK – {len(clients)} εταιρείες")
 
 
