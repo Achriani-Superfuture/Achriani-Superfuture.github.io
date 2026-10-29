@@ -3,7 +3,6 @@
   "distinctive_title": "C.G.C. P.C.",
   "gemi": "143983938000",
   "afm": "800885346",
-  "seat": "ΑΝΑΦΗ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,27 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΚΑΜΜΕΝΗ ΛΑΓΚΑΔΑ, 84009 ΑΝΑΦΗ",
+  "capital": 10000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΣΑΧΙΝ ΣΑΡΜΠΕΛ"
+  ],
+  "partners": [
+    {
+      "name": "ΣΑΧΙΝ ΣΑΡΜΠΕΛ",
+      "pct": 95,
+      "pct_label": "95%",
+      "amount": 9500.0
+    },
+    {
+      "name": "ΣΑΧΙΝ ΑΜΑΛΙΑ",
+      "pct": 5,
+      "pct_label": "5%",
+      "amount": 500.0
     }
   ]
 }

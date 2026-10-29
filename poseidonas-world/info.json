@@ -3,7 +3,6 @@
   "distinctive_title": "POSEIDONAS WORLD",
   "gemi": "145545227000",
   "afm": "800948189",
-  "seat": "ΑΡΧΑΝΕΣ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΚΑΡΝΑΓΙΟ ΛΙΜΑΝΙ ΗΡΑΚΛΕΙΟΥ ΠΡΟΒ 6, ΠΕΡΙΒΟΛΙΑ, 70100",
+  "capital": 5000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΠΑΤΕΡΑΚΗ ΓΕΩΡΓΙΑ"
+  ],
+  "partners": [
+    {
+      "name": "ΨΥΧΟΓΙΟΣ ΝΙΚΟΛΑΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 5000.0
     }
   ]
 }

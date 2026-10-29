@@ -3,7 +3,6 @@
   "distinctive_title": "SANTOLAND",
   "gemi": "159923338000",
   "afm": "801601801",
-  "seat": "ΘΗΡΑ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΑΝΩΝΥΜΟΣ 11, ΕΥΘΕΙΑ ΦΗΡΩΝ ΠΥΡΓΟΥ, 84700 ΘΗΡΑ",
+  "capital": 3000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΒΛΙΩΡΑΣ ΦΩΤΙΟΣ"
+  ],
+  "partners": [
+    {
+      "name": "ΒΛΙΩΡΑΣ ΦΩΤΙΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 3000.0
     }
   ]
 }

@@ -3,7 +3,6 @@
   "distinctive_title": "NAVI OCEANDIS Μ. Ι.Κ.Ε",
   "gemi": "148887601000",
   "afm": "801091490",
-  "seat": "ΒΟΥΛΑ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΠΑΤΡΙΑΡΧΟΥ ΙΩΑΚΕΙΜ 15, 16673 ΒΟΥΛΑ",
+  "capital": 4000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΠΑΝΟΥΡΓΙΑΣ ΔΙΟΝΥΣΙΟΣ"
+  ],
+  "partners": [
+    {
+      "name": "ΠΑΝΟΥΡΓΙΑΣ ΔΙΟΝΥΣΙΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 4000.0
     }
   ]
 }

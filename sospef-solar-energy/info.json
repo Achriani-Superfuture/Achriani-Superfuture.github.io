@@ -3,7 +3,6 @@
   "distinctive_title": "SOSPEF SOLAR ENERGY",
   "gemi": "175112407000",
   "afm": "802367330",
-  "seat": "ΝΙΚΑΙΑ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΜΕΡΣΙΝΗΣ 37, 18451 ΝΙΚΑΙΑ",
+  "capital": 66758,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΓΥΜΝΟΠΟΥΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ"
+  ],
+  "partners": [
+    {
+      "name": "ΓΥΜΝΟΠΟΥΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 66758.0
     }
   ]
 }

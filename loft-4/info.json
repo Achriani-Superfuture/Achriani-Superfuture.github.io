@@ -3,7 +3,6 @@
   "distinctive_title": "LOFT 4 BOUTIQUE HEALTH CLUB Ι.Κ.Ε",
   "gemi": "144916103000",
   "afm": "800918900",
-  "seat": "ΑΘΗΝΑ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,27 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΤΙΜΟΛΕΟΝΤΟΣ 6, 11636 ΑΘΗΝΑ",
+  "capital": 100,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΤΣΙΦΤΣΑΚΗ ΣΟΦΙΑ"
+  ],
+  "partners": [
+    {
+      "name": "ΤΣΙΦΤΣΑΚΗ ΣΟΦΙΑ",
+      "pct": 97,
+      "pct_label": "97%",
+      "amount": 97.0
+    },
+    {
+      "name": "ΤΣΙΦΤΣΑΚΗΣ ΔΗΜΗΤ.",
+      "pct": 3,
+      "pct_label": "3%",
+      "amount": 3.0
     }
   ]
 }

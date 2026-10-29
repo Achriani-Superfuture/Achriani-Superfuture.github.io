@@ -65,6 +65,11 @@ def fmt_date(s):
         return s or ""
 
 
+def money(v):
+    s = f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    return f"{s} €"
+
+
 def fmt_size(path):
     try:
         n = os.path.getsize(path)
@@ -89,15 +94,29 @@ def build_client(slug, info, site):
             f"<div class='small'>{fmt_size(fpath)}</div></td>"
             "</tr>"
         )
+    # Στοιχεία κατά το άρθρο 47 ν. 4072/2012 (εταιρική διαφάνεια)
     facts = [("Επωνυμία", info.get("name")), ("Διακριτικός τίτλος", info.get("distinctive_title")),
-             ("Αρ. ΓΕΜΗ", info.get("gemi")), ("ΑΦΜ", info.get("afm")), ("Έδρα", info.get("seat"))]
+             ("Αρ. ΓΕΜΗ", info.get("gemi")), ("ΑΦΜ", info.get("afm")),
+             ("Έδρα / Διεύθυνση", info.get("address") or info.get("seat")),
+             ("Εταιρικό κεφάλαιο", money(info["capital"]) if "capital" in info else None),
+             ("Εγγυητικές εισφορές", money(info["guarantee"]) if "guarantee" in info else None),
+             ("Κατάσταση", info.get("status")),
+             ("Διαχείριση", ", ".join(info.get("managers", [])))]
     dl = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in facts if v)
     table = (
         "<table><thead><tr><th>Χρήση</th><th>Έγγραφο</th><th class='hide'>Ανάρτηση</th><th>Αρχείο</th></tr></thead>"
         f"<tbody>{''.join(rows)}</tbody></table>" if rows else "<p class='small'>Δεν υπάρχουν ακόμη αναρτήσεις.</p>"
     )
-    body = f"""<header><h1>{e(info['name'])}</h1><p>Οικονομικές καταστάσεις</p></header>
-<section class="card"><dl>{dl}</dl></section>
+    partners = ""
+    if info.get("partners"):
+        prow = "".join(f"<tr><td>{e(p['name'])}</td><td>{e(p['pct_label'])}</td><td>{money(p['amount'])}</td></tr>"
+                       for p in info["partners"])
+        partners = ("<section class='card'><h2>Εταίροι και εισφορές</h2><table><thead><tr><th>Εταίρος</th>"
+                    "<th>Ποσοστό</th><th>Κεφαλαιακή εισφορά</th></tr></thead>"
+                    f"<tbody>{prow}</tbody></table></section>")
+    body = f"""<header><h1>{e(info['name'])}</h1><p>Εταιρικά στοιχεία και οικονομικές καταστάσεις</p></header>
+<section class="card"><h2>Στοιχεία εταιρείας</h2><dl>{dl}</dl></section>
+{partners}
 <section class="card"><h2>Δημοσιευμένες οικονομικές καταστάσεις</h2>{table}</section>
 <footer>Τελευταία ενημέρωση: {date.today().strftime('%d/%m/%Y')}</footer>"""
     with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as fh:

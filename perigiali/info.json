@@ -3,7 +3,6 @@
   "distinctive_title": "ΠΕΡΙΓΙΑΛΙ ΘΗΡΑΣ",
   "gemi": "158318338000",
   "afm": "801515093",
-  "seat": "ΘΗΡΑ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΚΑΜΑΡΙ, 84700 ΘΗΡΑ",
+  "capital": 15000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "CIVULI ALTIN"
+  ],
+  "partners": [
+    {
+      "name": "CIVULI ALTIN",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 15000.0
     }
   ]
 }

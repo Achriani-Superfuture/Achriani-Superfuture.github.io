@@ -3,7 +3,6 @@
   "distinctive_title": "DLAB GROUP",
   "gemi": "149835738000",
   "afm": "801132045",
-  "seat": "ΠΑΡΟΣ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΔΡΥΟΣ ΠΑΡΟΥ, 84400 ΠΑΡΟΣ",
+  "capital": 150000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΜΗΤΣΑΤΣΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ"
+  ],
+  "partners": [
+    {
+      "name": "ΜΗΤΣΑΤΣΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 150000.0
     }
   ]
 }

@@ -3,7 +3,6 @@
   "distinctive_title": "GREENBERRY",
   "gemi": "044899607000",
   "afm": "999010050",
-  "seat": "ΠΕΙΡΑΙΑΣ",
   "filings": [
     {
       "year": 2025,
@@ -11,6 +10,21 @@
       "title": "Οικονομικές καταστάσεις χρήσης 2025",
       "file": "oikonomikes-katastaseis-2025.pdf",
       "posted": "2026-10-29"
+    }
+  ],
+  "address": "ΣΚΥΛΙΤΣΗ 42-48, 18533 ΠΕΙΡΑΙΑΣ",
+  "capital": 3000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΚΑΚΛΕΙΔΑΚΗΣ ΑΛΕΞΙΟΣ"
+  ],
+  "partners": [
+    {
+      "name": "ΚΑΚΛΕΙΔΑΚΗΣ ΑΛΕΞΙΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 3000.0
     }
   ]
 }
