@@ -1,0 +1,30 @@
+{
+  "name": "THRONOS YACHTING ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.",
+  "distinctive_title": "THRONOS YACHTING",
+  "gemi": "182182303000",
+  "afm": "802755572",
+  "filings": [
+    {
+      "year": 2025,
+      "period": "05/02/2025 – 31/12/2025",
+      "title": "Οικονομικές καταστάσεις χρήσης 2025",
+      "file": "oikonomikes-katastaseis-2025.pdf",
+      "posted": "2026-11-03"
+    }
+  ],
+  "address": "ΛΙΒΑΔΙ ΣΕΡΙΦΟΥ, 84005",
+  "capital": 135000,
+  "guarantee": 0,
+  "status": "Ενεργή – δεν τελεί υπό εκκαθάριση",
+  "managers": [
+    "ΜΠΟΦΙΛΙΟΣ ΓΕΩΡΓΙΟΣ"
+  ],
+  "partners": [
+    {
+      "name": "ΜΠΟΦΙΛΙΟΣ ΓΕΩΡΓΙΟΣ",
+      "pct": 100,
+      "pct_label": "100%",
+      "amount": 135000.0
+    }
+  ]
+}
