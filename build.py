@@ -9,6 +9,7 @@
 import html
 import json
 import os
+import sys
 from datetime import date
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -40,7 +41,7 @@ footer{margin-top:32px;font-size:.85rem;color:var(--muted)}
 e = html.escape
 
 
-def page(title, body, description=""):
+def page(title, body, description="", extra_css="", head_extra=""):
     return f"""<!doctype html>
 <html lang="el">
 <head>
@@ -48,7 +49,7 @@ def page(title, body, description=""):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
-<style>{CSS}</style>
+<style>{CSS}{extra_css}</style>{head_extra}
 </head>
 <body><div class="wrap">
 {body}
@@ -154,6 +155,10 @@ def main():
             fh.write(f"{n:2}. {info['name']}\n    ΓΕΜΗ: {info.get('gemi', '')}   ΑΦΜ: {info.get('afm', '')}\n"
                      f"    {site['base_url']}/{slug}/\n\n")
     print(f"OK – {len(clients)} εταιρείες")
+    # Σελίδα ενημερώσεων πελατών (φάκελος enimerwseis/)
+    sys.path.insert(0, ROOT)
+    import enimerwseis_build
+    enimerwseis_build.build(ROOT, page)
 
 
 if __name__ == "__main__":
